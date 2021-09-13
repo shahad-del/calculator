@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="calculator">
+        <input type="number" id = "userNumber" placeholder="0" onkeyup="checkIfDigit(event)"></input>
+        <div id="numbers">
+                <button id="add" onclick="readOperator('+')">+</button>
+                <button id="minus" onclick="readOperator('-')">-</button>
+                <button id="multiply" onclick="readOperator('*')">*</button>
+                <button id="divison" onclick="readOperator('/')">/</button>
+                <button id="btn2" onclick="readNumber(2)">2</button>
+                <button id="btn3" onclick="readNumber(3)">3</button>
+                <button id="btn4" onclick="readNumber(4)">4</button>
+                <button id="btn5" onclick="readNumber(5)">5</button>
+                <button id="btn6" onclick="readNumber(6)">6</button>
+                <button id="btn7" onclick="readNumber(7)">7</button>
+                <button id="btn8" onclick="readNumber(8)">8</button>
+                <button id="btn9" onclick="readNumber(9)">9</button>
+                <button id="btn0" onclick="readNumber(0)">0</button>
+                <button id="decimal" onclick="readNumber('.')">.</button>
+                <button id="empty">AC</button>
+                <button id="empty" onclick="calcResult()" onclick="calcResult()">=</button>
+        </div>
+        <p>
+            <h4 id="output"></h4>
+        </p>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+#numbers{
+    display:grid;
+    grid-template-columns: 10% 10% 10% 10%;
+}
+input[type='number']::placeholder{
+        text-align: right;
+    }
+
+input#userNumber{
+    height: 75px;
+    font-size: 32px;
+    text-align: right;
+    padding: 0;
+}
