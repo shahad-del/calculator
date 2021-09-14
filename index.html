@@ -9,7 +9,7 @@
 </head>
 <body>
     <div id="calculator">
-        <input type="number" id = "userNumber" placeholder="0" onkeyup="checkIfDigit(event)"></input>
+        <input type="text" id = "userNumber" placeholder="0" onkeydown="checkIfDigit(event)"></input>
         <div id="numbers">
                 <button id="add" onclick="readOperator('+')">+</button>
                 <button id="minus" onclick="readOperator('-')">-</button>
